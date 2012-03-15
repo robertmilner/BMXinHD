@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120315175055) do
+ActiveRecord::Schema.define(:version => 20120315181536) do
 
   create_table "videos", :force => true do |t|
     t.string   "vendor_type"
     t.integer  "vendor_id"
     t.string   "title"
-    t.string   "description"
+    t.text     "description",              :limit => 255
     t.string   "url"
     t.string   "upload_date"
     t.string   "mobile_url"
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(:version => 20120315175055) do
     t.integer  "height"
     t.string   "tags"
     t.string   "embed_privacy"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",                              :null => false
+    t.datetime "updated_at",                              :null => false
   end
 
 end

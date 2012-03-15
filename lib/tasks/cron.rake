@@ -5,8 +5,8 @@ task :cron => :environment do
 
   channel_videos = Vimeo::Simple::Channel.videos('bmxinhd')
   channel_videos.each do |video|
-    video = Video.find_or_initialize_by_vendor_type_and_vendor_id("vimeo", video['id']) do |v|        
-      v.vendor_type               = "vimeo"
+    video = Video.find_or_initialize_by_vendor_type_and_vendor_id('vimeo', video['id']) do |v|        
+      v.vendor_type               = 'vimeo'
       v.vendor_id                 = video['id']
       v.title                     = video['title']
       v.description               = video['description']
