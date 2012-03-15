@@ -49,6 +49,10 @@ GEM
       rest-client (~> 1.6.1)
       rubyzip
     hike (1.2.1)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    httpclient (2.2.4)
     i18n (0.6.0)
     journey (1.0.3)
     jquery-rails (2.0.1)
@@ -63,7 +67,10 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.1.0)
+    multi_xml (0.4.2)
+    multipart-post (1.1.5)
     netrc (0.7.1)
+    oauth (0.4.5)
     pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -117,6 +124,12 @@ GEM
     uglifier (1.2.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    vimeo (1.5.1)
+      httparty (>= 0.4.5)
+      httpclient (>= 2.1.5.2)
+      json (>= 1.1.9)
+      multipart-post (>= 1.0.1)
+      oauth (>= 0.4.3)
 
 PLATFORMS
   ruby
@@ -131,3 +144,4 @@ DEPENDENCIES
   sqlite3
   thin
   uglifier (>= 1.0.3)
+  vimeo

@@ -1,9 +1,12 @@
 desc "BMX in HD Vimeo Channel Feed"
 task :cron => :environment do
+
+  puts "Start time: #{Time.now}"
+
   channel_videos = Vimeo::Simple::Channel.videos('bmxinhd')
   channel_videos.each do |video|
-    video = Video.find_or_initialize_by_vendor_type_and_vendor_id(video['vimeo'], video['id']) do |v|        
-      v.vendor_type               = video['vimeo']
+    video = Video.find_or_initialize_by_vendor_type_and_vendor_id('vimeo', video['id']) do |v|        
+      v.vendor_type               = 'vimeo'
       v.vendor_id                 = video['id']
       v.title                     = video['title']
       v.description               = video['description']
@@ -30,4 +33,9 @@ task :cron => :environment do
     end
     video.save!
   end
+
+  puts "End time: #{Time.now}"
+
+  puts "#{Video.count} video created."
+
 end
