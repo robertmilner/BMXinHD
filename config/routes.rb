@@ -1,4 +1,4 @@
 BMXinHDApp::Application.routes.draw do
-  root :to => 'videos#index'
   resources :videos
-end
+
+  root :to => 'videos#index'end

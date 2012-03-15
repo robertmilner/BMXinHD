@@ -2,7 +2,7 @@
 
 one:
   vendor_type: MyString
-  vendor_id: MyString
+  vendor_id: 1
   title: MyString
   description: MyString
   url: MyString
@@ -17,18 +17,18 @@ one:
   user_portrait_medium: MyString
   user_portrait_large: MyString
   user_portrait_huge: MyString
-  stats_number_of_likes: MyString
-  stats_number_of_plays: MyString
-  stats_number_of_comments: MyString
-  duration: MyString
-  width: MyString
-  height: MyString
+  stats_number_of_likes: 1
+  stats_number_of_plays: 1
+  stats_number_of_comments: 1
+  duration: 1
+  width: 1
+  height: 1
   tags: MyString
   embed_privacy: MyString
 
 two:
   vendor_type: MyString
-  vendor_id: MyString
+  vendor_id: 1
   title: MyString
   description: MyString
   url: MyString
@@ -43,11 +43,11 @@ two:
   user_portrait_medium: MyString
   user_portrait_large: MyString
   user_portrait_huge: MyString
-  stats_number_of_likes: MyString
-  stats_number_of_plays: MyString
-  stats_number_of_comments: MyString
-  duration: MyString
-  width: MyString
-  height: MyString
+  stats_number_of_likes: 1
+  stats_number_of_plays: 1
+  stats_number_of_comments: 1
+  duration: 1
+  width: 1
+  height: 1
   tags: MyString
   embed_privacy: MyString

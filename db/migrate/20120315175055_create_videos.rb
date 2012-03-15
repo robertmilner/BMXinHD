@@ -2,7 +2,7 @@ class CreateVideos < ActiveRecord::Migration
   def change
     create_table :videos do |t|
       t.string :vendor_type
-      t.string :vendor_id
+      t.integer :vendor_id
       t.string :title
       t.string :description
       t.string :url
@@ -17,12 +17,12 @@ class CreateVideos < ActiveRecord::Migration
       t.string :user_portrait_medium
       t.string :user_portrait_large
       t.string :user_portrait_huge
-      t.string :stats_number_of_likes
-      t.string :stats_number_of_plays
-      t.string :stats_number_of_comments
-      t.string :duration
-      t.string :width
-      t.string :height
+      t.integer :stats_number_of_likes
+      t.integer :stats_number_of_plays
+      t.integer :stats_number_of_comments
+      t.integer :duration
+      t.integer :width
+      t.integer :height
       t.string :tags
       t.string :embed_privacy
 
