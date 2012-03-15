@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vendor_type: MyString
+  vendor_id: MyString
+  title: MyString
+  description: MyString
+  url: MyString
+  upload_date: MyString
+  mobile_url: MyString
+  thumbnail_small: MyString
+  thumbnail_medium: MyString
+  thumbnail_large: MyString
+  user_name: MyString
+  user_url: MyString
+  user_portrait_small: MyString
+  user_portrait_medium: MyString
+  user_portrait_large: MyString
+  user_portrait_huge: MyString
+  stats_number_of_likes: MyString
+  stats_number_of_plays: MyString
+  stats_number_of_comments: MyString
+  duration: MyString
+  width: MyString
+  height: MyString
+  tags: MyString
+  embed_privacy: MyString
+
+two:
+  vendor_type: MyString
+  vendor_id: MyString
+  title: MyString
+  description: MyString
+  url: MyString
+  upload_date: MyString
+  mobile_url: MyString
+  thumbnail_small: MyString
+  thumbnail_medium: MyString
+  thumbnail_large: MyString
+  user_name: MyString
+  user_url: MyString
+  user_portrait_small: MyString
+  user_portrait_medium: MyString
+  user_portrait_large: MyString
+  user_portrait_huge: MyString
+  stats_number_of_likes: MyString
+  stats_number_of_plays: MyString
+  stats_number_of_comments: MyString
+  duration: MyString
+  width: MyString
+  height: MyString
+  tags: MyString
+  embed_privacy: MyString

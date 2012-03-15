@@ -1,0 +1,69 @@
+<h1>Listing videos</h1>
+
+<table>
+  <tr>
+    <th>Vendor type</th>
+    <th>Vendor</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Url</th>
+    <th>Upload date</th>
+    <th>Mobile url</th>
+    <th>Thumbnail small</th>
+    <th>Thumbnail medium</th>
+    <th>Thumbnail large</th>
+    <th>User name</th>
+    <th>User url</th>
+    <th>User portrait small</th>
+    <th>User portrait medium</th>
+    <th>User portrait large</th>
+    <th>User portrait huge</th>
+    <th>Stats number of likes</th>
+    <th>Stats number of plays</th>
+    <th>Stats number of comments</th>
+    <th>Duration</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Tags</th>
+    <th>Embed privacy</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @videos.each do |video| %>
+  <tr>
+    <td><%= video.vendor_type %></td>
+    <td><%= video.vendor_id %></td>
+    <td><%= video.title %></td>
+    <td><%= video.description %></td>
+    <td><%= video.url %></td>
+    <td><%= video.upload_date %></td>
+    <td><%= video.mobile_url %></td>
+    <td><%= video.thumbnail_small %></td>
+    <td><%= video.thumbnail_medium %></td>
+    <td><%= video.thumbnail_large %></td>
+    <td><%= video.user_name %></td>
+    <td><%= video.user_url %></td>
+    <td><%= video.user_portrait_small %></td>
+    <td><%= video.user_portrait_medium %></td>
+    <td><%= video.user_portrait_large %></td>
+    <td><%= video.user_portrait_huge %></td>
+    <td><%= video.stats_number_of_likes %></td>
+    <td><%= video.stats_number_of_plays %></td>
+    <td><%= video.stats_number_of_comments %></td>
+    <td><%= video.duration %></td>
+    <td><%= video.width %></td>
+    <td><%= video.height %></td>
+    <td><%= video.tags %></td>
+    <td><%= video.embed_privacy %></td>
+    <td><%= link_to 'Show', video %></td>
+    <td><%= link_to 'Edit', edit_video_path(video) %></td>
+    <td><%= link_to 'Destroy', video, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Video', new_video_path %>

@@ -1,0 +1,113 @@
+<%= form_for(@video) do |f| %>
+  <% if @video.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h2>
+
+      <ul>
+      <% @video.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vendor_type %><br />
+    <%= f.text_field :vendor_type %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor_id %><br />
+    <%= f.text_field :vendor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :upload_date %><br />
+    <%= f.text_field :upload_date %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile_url %><br />
+    <%= f.text_field :mobile_url %>
+  </div>
+  <div class="field">
+    <%= f.label :thumbnail_small %><br />
+    <%= f.text_field :thumbnail_small %>
+  </div>
+  <div class="field">
+    <%= f.label :thumbnail_medium %><br />
+    <%= f.text_field :thumbnail_medium %>
+  </div>
+  <div class="field">
+    <%= f.label :thumbnail_large %><br />
+    <%= f.text_field :thumbnail_large %>
+  </div>
+  <div class="field">
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name %>
+  </div>
+  <div class="field">
+    <%= f.label :user_url %><br />
+    <%= f.text_field :user_url %>
+  </div>
+  <div class="field">
+    <%= f.label :user_portrait_small %><br />
+    <%= f.text_field :user_portrait_small %>
+  </div>
+  <div class="field">
+    <%= f.label :user_portrait_medium %><br />
+    <%= f.text_field :user_portrait_medium %>
+  </div>
+  <div class="field">
+    <%= f.label :user_portrait_large %><br />
+    <%= f.text_field :user_portrait_large %>
+  </div>
+  <div class="field">
+    <%= f.label :user_portrait_huge %><br />
+    <%= f.text_field :user_portrait_huge %>
+  </div>
+  <div class="field">
+    <%= f.label :stats_number_of_likes %><br />
+    <%= f.text_field :stats_number_of_likes %>
+  </div>
+  <div class="field">
+    <%= f.label :stats_number_of_plays %><br />
+    <%= f.text_field :stats_number_of_plays %>
+  </div>
+  <div class="field">
+    <%= f.label :stats_number_of_comments %><br />
+    <%= f.text_field :stats_number_of_comments %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :tags %><br />
+    <%= f.text_field :tags %>
+  </div>
+  <div class="field">
+    <%= f.label :embed_privacy %><br />
+    <%= f.text_field :embed_privacy %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
